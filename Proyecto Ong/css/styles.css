@@ -1,0 +1,49 @@
+/** CUSTOM PROPERTIES**/ 
+:root{
+    --primario: #99CAB5;
+    --secundario: #ABC8D7;
+    --colortext:#F0F1EB;
+    --alternativo: #BCADA3;
+    --fuentePrincipal: 'New Tegomin', serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+img {
+    max-width: 100%;
+}
+body {
+    background-color: var(--primario);
+}
+
+h1 {
+    text-align: center;
+    color: var(--colortext);
+    font-family: var(--fuentePrincipal);
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+.header__logo {
+    margin: 5px 0;
+    width: 120px; height: 150px;
+}
+
+.navegacion {
+    background-color: var(--secundario);
+    padding: 10px 0;
+        display: flex;
+    justify-content: center;
+
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--colortext);
+    font-size: 30px;
+    text-decoration: none;
+    
+}
