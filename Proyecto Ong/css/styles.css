@@ -1,12 +1,12 @@
 /** CUSTOM PROPERTIES**/ 
 :root{
     --primario: #99CAB5;
-    --secundario: #ABC8D7;
+    --secundario: #ABC8D7;            /**PALETA DE COLORES AUN POR DEFINIR**/
     --colortext:#F0F1EB;
     --alternativo: #BCADA3;
-    --fuentePrincipal: 'New Tegomin', serif;
+    --fuentePrincipal: 'New Tegomin', serif;  
 }
-
+/**GENERAL**/
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -23,6 +23,7 @@ h1 {
     color: var(--colortext);
     font-family: var(--fuentePrincipal);
 }
+/**HEADER**/
 .header {
     display: flex;
     justify-content: center;
@@ -31,7 +32,7 @@ h1 {
     margin: 5px 0;
     width: 120px; height: 150px;
 }
-
+/**NAVEGACION**/
 .navegacion {
     background-color: var(--secundario);
     padding: 10px 0;
