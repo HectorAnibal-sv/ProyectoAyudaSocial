@@ -1,21 +1,31 @@
 /** CUSTOM PROPERTIES**/ 
 :root{
     --primario: #99CAB5;
-    --secundario: #ABC8D7;            /**PALETA DE COLORES AUN POR DEFINIR**/
-    --colortext:#F0F1EB;
-    --alternativo: #BCADA3;
-    --fuentePrincipal: 'New Tegomin', serif;  
+    --secundario: #B6ECC6;
+    --colortext:#848B83;
+    --alternativo: #f4efc1;
+    --fuentePrincipal: 'New Tegomin', serif;
 }
-/**GENERAL**/
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    
 }
 img {
     max-width: 100%;
 }
+p {
+   font-size: 17.8px;
+   font-family: Arial, Helvetica, sans-serif; 
+   color: var(--colortext)
+}
+a { 
+    text-decoration: none;
+}
 body {
-    background-color: var(--primario);
+    background-color: var(--secundario);
+
 }
 
 h1 {
@@ -23,28 +33,84 @@ h1 {
     color: var(--colortext);
     font-family: var(--fuentePrincipal);
 }
-/**HEADER**/
+
+
+.nav-link, .navbar-brand {
+    font-size: 15px;
+}
+.textlog {
+    font-family: var(--fuentePrincipal);
+    color: var(--colortext);
+    font-size: 68px;
+}
 .header {
     display: flex;
-    justify-content: center;
+    justify-content:left;
+    padding: 0.5px;
 }
 .header__logo {
     margin: 5px 0;
-    width: 120px; height: 150px;
+    width: 220px; height: 250px;
 }
-/**NAVEGACION**/
+
+/**Navegacion**/
 .navegacion {
-    background-color: var(--secundario);
+    background-color: var(--alternativo);
     padding: 10px 0;
-        display: flex;
+    display: flex;
     justify-content: center;
-
 }
-
 .navegacion__enlace {
     font-family: var(--fuentePrincipal);
     color: var(--colortext);
-    font-size: 30px;
-    text-decoration: none;
+    font-size:  20px;
+    margin-right: 15px;
+}
+
+.navegacion__enlace:last-of-type {
+    margin-right: 0;
+}
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color:var(--primario);
+}
+
+.estructura__mural {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+label {
+    color: var(--colortext);
+    font-family: var(--fuentePrincipal);
+    font-size: 15px;
+}
+legend {
+    color: var(--colortext);
+    font-family: var(--fuentePrincipal);
+    font-size: 20px;
+
+}
+
+.nav-item {
+    color: var(--primario);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.publicacion__logo { 
+    width: 470px; 
+    height:420px;
     
 }
+
