@@ -79,7 +79,7 @@ h1 {
     margin: 0 auto;
 }
 
-label {
+/*label {
     color: var(--colortext);
     font-family: var(--fuentePrincipal);
     font-size: 15px;
@@ -89,7 +89,7 @@ legend {
     font-family: var(--fuentePrincipal);
     font-size: 20px;
 
-}
+}*/
 
 .nav-item {
     color: var(--primario);
@@ -112,13 +112,14 @@ legend {
     height:420px;
     
 }
-
+/*Carrousel*/
 .class_carrousel{
     margin:auto;
     float:right;
     max-width: 500px;
 }
 
+/*Formulario Nutricion*/
 .titulo_salud{
     
     color: #020202;
@@ -145,7 +146,7 @@ legend {
 .genero
 {
   margin-right: 30px;
-  ;
+  
 }
 
 .chk_genero{
@@ -158,7 +159,35 @@ legend {
 .edad{
     margin-left: 20px;
 }
-
+/*
 .nacionalidad{
     margin-left: 60px;
+}*/
+
+.segun{
+    color: #020202;
+    font-weight: bold;
+    font-style: oblique ;
+}
+.agua{
+    bottom: 15%;
+}
+
+.txt_form{
+    color:#2c6341;
+}
+.margen_15{
+    margin-bottom: 40%;
+}
+
+.cont_nut{
+    margin-bottom: 10%;
+    position: relative;
+
+}
+
+.chk_enviar {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
 }
