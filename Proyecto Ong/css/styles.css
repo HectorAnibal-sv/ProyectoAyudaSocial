@@ -9,8 +9,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
-    
+
 }
 img {
     max-width: 100%;
@@ -114,3 +113,52 @@ legend {
     
 }
 
+.class_carrousel{
+    margin:auto;
+    float:right;
+    max-width: 500px;
+}
+
+.titulo_salud{
+    
+    color: #020202;
+    font-size: 30px;
+    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    
+}
+
+
+.titulo_form{
+    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #2c6341;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+
+.msj_ups{
+    color: var(--colortext);
+}
+
+.genero
+{
+  margin-right: 30px;
+  ;
+}
+
+.chk_genero{
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+
+}
+
+.edad{
+    margin-left: 20px;
+}
+
+.nacionalidad{
+    margin-left: 60px;
+}
