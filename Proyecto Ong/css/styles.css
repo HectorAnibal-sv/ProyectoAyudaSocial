@@ -11,6 +11,8 @@
 
 html {
     box-sizing: border-box;
+    display:fixed;
+    position: relative;
 
 }
 img {
@@ -21,7 +23,7 @@ img {
    font-family: Arial, Helvetica, sans-serif; 
    color: var(--colortext)
 }
-a { 
+.a { 
     text-decoration: none;
 }
 body {
@@ -41,8 +43,9 @@ h1 {
 }
 .textlog {
     font-family: var(--fuentePrincipal);
-    color: var(--colortext);
+    color: var(--alternativo2);
     font-size: 68px;
+    margin-left: 100px;
 }
 .header {
     display: flex;
@@ -120,36 +123,345 @@ legend {
     float:right;
     max-width: 500px;
 }
-/*Formulario */
-.tit_form{
-    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    color: var(--alternativo2);
-   
+
+/*Index*/
+
+.tit_index{
+    margin-bottom: 8%;
+    color:var(--alternativo2);
+    font-size: 60px;
+    font-weight: bolder;
+}
+.cuad_psico{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10%;
+    background-color: var(--alternativo3);
+    padding: 8%;
+    
 }
 
-/*Nutricion*/
-.titulo_nut{
-    color: #020202;
-    font-size: 30px;
-    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.tit_psico{
+   font-variant: small-caps;
+    margin-bottom: 5%;
     font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.txt_psico{
+    font-style: oblique;
+    font-size: 20px;
+    text-align: justify;
+
+}
+.img_psico
+{
+    width: 700px;
+    height: 400px;
+    margin-bottom: 15%;
+    margin-top: 10%;
+}
+
+/*Consulta(Te ayudamos)*/
+
+.cont_cons{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    position: relative;
+    background-color: var(--alternativo);
     
     
 }
-/*Deporte*/
-.titulo_dep{
-    color:#020202;
+
+.cuad_cons{
+    display: relative;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 395px;
+    margin-right: 400px;
+    background-color:var(--alternativo3);
+    padding: 2%;
+}
+
+.txt_cons{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.tit_cons{
+    color:var(--alternativo2);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+/*Mural de Ayuda*/
+.tarjetas{
+    height: 80%;
+    width: 80%;
+    margin-top: 5%;
+    margin: auto;
+    padding: 5%;
+    text-align: justify;
+    background-color: var(--alternativo);
+}
+
+.tit_mur{
+    color:var(--alternativo2);
+    font-size: 60px;
+    font-weight: bolder;
+}
+.txt_cards{
+    color:#0e5214;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    align-items: baseline;
+    font-weight: bolder;
+}
+.tarjetas1{
+    padding: 2%;
+}
+.tarjetas2{
+    padding: 2%;
+}
+
+.back_cards{
+    background-color:var(--primario);
+}
+/*Salud y calidad*/
+
+.cuad_salud{
+    align-items: center;
+    margin-left: 15%;
+    margin-top:3%;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin:0 auto;
+}
+
+.tit_salud{
+    align-items: center;
+    font-size: 130%;
+    font-style: oblique;
+    font-weight:bold;
+    color: var(--alternativo);
+}
+
+.tit_salud_2{
+    color:var(--alternativo2);
     font-size: 60px;
     font-weight: bolder;
 }
 
 
+/*Deportes*/
+.txt_deportes{
+    color:var(--alternativo2);
+    font-size: 30px;
+}
 
+.txt_cuad_dep{
+   display: flexbox;
+   font-size: 35px;
+   align-items: center;
+   background-color:var(--alternativo);
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    padding:1%;
+}
+.cuad_dep{
+    margin-bottom: 20px;
+    align-items: unset;
+}
+
+.cuad_dep2{
+    margin-top: 5%;
+    margin-bottom: 20px;
+    align-items: unset;
+}
+
+.alineamiento{
+    align-items:flex-start;
+}
+
+.pos_container_dep{
+    float: center;
+    text-align: justify;
+    
+}
+.font_text_dep{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.tit_dep{
+    color: var(--alternativo2);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.margen_dep{
+    margin-bottom: 5%;
+}
+
+.paf_dep{
+    background-color: var(--alternativo);
+    padding: 2%;
+    border-bottom:groove;
+}
+
+/*Nutricion*/
+.tit_nut{
+    color: var(--alternativo2);
+    font-size: 60px;
+    font-weight: bolder;
+
+}
+
+.cont_nut{
+    margin-top:5%;
+    margin-bottom: 10%;
+    position: relative;
+    background-color: var(--alternativo);
+    font-style: oblique;
+}
+.cuad_nut{
+    display: relative;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 395px;
+    margin-right: 400px;
+    background-color:var(--alternativo3);
+    padding: 2%;
+}
+
+.txt_nut{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/*Nosotros*/
+.tit_nos{
+    color: var(--alternativo2);
+    font-size: 60px;
+    font-weight: bolder;
+
+}
+.cuad_nos{
+    display: relative;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 15%;
+    margin-right:15%;
+    background-color:var(--alternativo3);
+    padding: 2%;
+}
+.txt_nos{
+    font-style: oblique;
+    text-align: justify;
+    background-color: var(--alternativo);
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style:oblique;
+    font-weight: lighter;
+    padding: 4%;
+}
+/*Voluntarios*/
+.tit_vol{
+    color: var(--alternativo2);
+    font-size: 60px;
+    font-weight: bolder;
+
+}
+
+.cont_vol{
+    margin-top:5%;
+    margin-bottom: 10%;
+    position: relative;
+    background-color: var(--alternativo);
+    font-style: oblique;
+}
+
+.cuad_vol{
+    display: relative;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 395px;
+    margin-right: 400px;
+    background-color:var(--alternativo3);
+    padding: 2%;
+}
+
+.txt_vol{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+/*Testimonios*/
+.tit_test{
+    color: var(--alternativo2);
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.cont_test{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    position: relative;
+    background-color: var(--alternativo);
+    
+}
+
+.cuad_test{
+    display: relative;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 395px;
+    margin-right: 400px;
+    background-color:var(--alternativo3);
+    padding: 2%;
+}
+
+.txt_test{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.v_test{
+    margin-left: 35%;
+    
+}
+.tit_v_test{
+    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: var(--alternativo);
+    font-style: oblique;
+}
+
+/*Formulario */
+.tit_form{
+    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: var(--alternativo2);
+}
 .msj_ups{
     color: var(--colortext);
 }
-
 .genero
 {
   margin-right: 30px;
@@ -187,12 +499,7 @@ legend {
     margin-bottom: 40%;
 }
 
-.cont_nut{
-    margin-bottom: 10%;
-    position: relative;
-    background-color: var(--alternativo3);
 
-}
 
 .chk_enviar {
     display: flex;
@@ -204,125 +511,6 @@ legend {
     margin-bottom: 50%;
 }
 
-/*Deportes*/
-.txt_deportes{
-    color:var(--alternativo2);
-    font-size: 30px;
-}
-
-.txt_cuad_dep{
-   display: flexbox;
-   font-size: 35px;
-   align-items: center;
-   background-color:var(--alternativo);
-    
-}
-.cuad_dep{
-    margin-bottom: 20px;
-    align-items: unset;
-}
-
-.alineamiento{
-    align-items:flex-start;
-}
-
-.pos_container_dep{
-    float: left;
-    text-align: justify;
-    
-}
-.font_text_dep{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 20px;
-    text-align: justify;
-}
-/*Index*/
-
-.tit_index{
-    margin-bottom: 8%;
-}
-.cuad_psico{
-    width: 50%;
-    margin: auto;
-    display:relative;
-    text-align: center;
-    margin-bottom: 10%;
-    background-color: var(--alternativo3);
-    padding: 8%;
-    
-}
-
-.tit_psico{
-   font-variant: small-caps;
-    margin-bottom: 5%;
-    font-style: italic;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.txt_psico{
-    font-style: oblique;
-    font-size: 20px;
-    text-align: justify;
-
-}
-.img_psico
-{
-    width: 700px;
-    height: 400px;
-    margin-bottom: 15%;
-    margin-top: 10%;
-}
-
-
-/*Salud y calidad*/
-
-.cuad_salud{
-    align-items: center;
-    margin-left: 15%;
-    margin-top:5%;
-}
-.grid2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin:0 auto;
-}
-
-.tit_salud{
-    align-items: center;
-    font-size: 130%;
-    font-style: oblique;
-    font-weight:bold;
-    color: var(--alternativo);
-}
-
-/*Voluntarios*/
-.cont_vol{
-    margin-bottom: 10%;
-    position: relative;
-    background-color: var(--alternativo3);
-
-}
-
-
-/*Consulta(Te ayudamos)*/
-
-.cont_cons{
-    margin-top: 5%;
-    margin-bottom: 10%;
-    position: relative;
-    background-color: var(--alternativo3);
-    
-}
-
-.sec_res{
-    display: relative;
-    margin-left: 20%;
-}
-
-.txt_res{
-    font-size: 25px;
-}
 
 /** Footer **/ 
 .red-soc{
@@ -331,7 +519,6 @@ legend {
     text-align: center;
     margin-top: 300px;
     padding: 20px;
-    
 }
 
 .footer{
@@ -340,13 +527,5 @@ legend {
     color: var(--alternativo2);
     padding: 20px;
     background-color: var(--secundario);
-}
-
-.infnos{
-    width: 100%;
-}
-
-.infequipo{
-    width: 100%;
 }
 

@@ -11,7 +11,7 @@
     <link type = "text/css" rel ="stylesheet" href ="css/normalize.css">
     <link type = "text/css" rel ="stylesheet" href ="css/styles.css">
 
-    <title>Yo te Apaño y Escucho </title> <!--NOMBRE DE PAGINA-->
+    <title>Yo te Apaño/Testimonios ♥ </title> <!--NOMBRE DE PAGINA-->
 </head>
     
     <!-- CUERPO DE PAGINA-->
@@ -35,7 +35,7 @@
                     <img src="img/img_carrousel_nut.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item "data-interval="4000">
-                    <img src="img/img_car_1.jpg" class="d-block w-100" alt="...">
+                    <img src="img/img_carrousel_vol.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
@@ -56,20 +56,31 @@
     <!--BARRA DE NAVEGACION-->
     <nav class ="navegacion">
         <a class = "navegacion__enlace" href="index.html">Inicio</a>
-        <a class = "navegacion__enlace navegacion__enlace--activo" href="consulta.html">Te escuchamos</a>
+        <a class = "navegacion__enlace" href="consulta.html">Te escuchamos</a>
         <a class = "navegacion__enlace" href="mural.html">Mural de ayuda</a>
         <a class = "navegacion__enlace" href="saludycalidad.html">Salud y calidad de vida</a>
         <a class = "navegacion__enlace" href="nosotros.html">Nosotros</a>
         <a class = "navegacion__enlace" href="voluntarios.html">Voluntarios</a>
-        <a class = "navegacion__enlace" href="testimonios.html">Testimonios</a>
+        <a class = "navegacion__enlace navegacion__enlace--activo" href="testimonios.html">Testimonios</a>
     </nav>
     <main>
-      <div class="sec_res_test">
-        <p class="txt_res">¡Cada Testimonio es importante Gracias!</p> 
+      <div>
+        <h1 class="tit_test ">TESTIMONIOS</h1>
+      </div>
+      <div class="cuad_test">
+        <p class="txt_test">Para nosotros es importante saber como se sienten nuestros usuarios, es por esto que habilitamos el siguiente formulario
+          para que puedan expresar sus sentimientos, dar su opinión o contar su experiencia dentro de esta organización social.
+        </p> 
+      </div>
+      <div class="v_test">
+        <label for="Video" class="tit_v_test">Video testimonio sobre voluntariados en pandemia</label>
+        <div class="Video">
+          <iframe width="520" height="320" src="https://www.youtube.com/embed/inUOp1_ChHs" title="Video Testimonio" frameborder="3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
       </div>
       
-      <div class="container cont_cons">
-       <br> <p class="tit_form">Complete el formulario</p> 
+      <div class="container cont_test">
+       <br> <p class="tit_form">COMPLETA EL FORMULARIO</p> 
         <form class="needs-validation" novalidate>
             <div class="form-row">
                 <!--Nombre y apellido-->
@@ -159,7 +170,7 @@
                 <label for="validationTextarea">Ingrese su Testimonio<b></label>
                 <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Escribe..." required></textarea>
                 <div class="valid-feedback">
-                  no ha registrado nada, por favor ingrese texto en el campo.
+                  No ha registrado nada, por favor ingrese texto en el campo.
                 </div>
               </div>
             </div>
@@ -178,7 +189,7 @@
                   </div>
                 </div>
               </div>
-            <button class="btn btn-success" type="submit">Enviar Formulario</button>
+            <button class="btn btn-success " type="submit">Enviar Formulario</button><br>
         </form>
           <!--Validador Ingreso-->
             <script>
