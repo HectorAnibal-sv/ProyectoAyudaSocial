@@ -61,19 +61,241 @@
         <a class = "navegacion__enlace" href="nosotros.html">Nosotros</a>
         <a class = "navegacion__enlace  navegacion__enlace--activo" href="voluntarios.html">Voluntarios</a>
         <a class = "navegacion__enlace" href="testimonios.html">Testimonios</a>
-        <a class = "navegacion__enlace" href="portrueques.html">Portal de Trueques</a>
-    </nav>
-    
-        <footer class ="footer">
-        <p class = "footer__texto">Fronot End Store ByHavv93<< - Todos los derechos reservados 2021.</p>
-            
-        <a href= "https://www.facebook.com" target ="_blank"> <img class= "icon" src=img/fb_icon.png alt="icono"> </a>
-        <a href= "https://www.instagram.com" target ="_blank"> <img class= "icon" src=img/ig_icon.png alt="icono"> </a>
-        <a href= "https://www.twitter.com" target ="_blank"> <img class= "icon" src=img/tw_icon.png alt="icono"> </a>
-        <a href= "nosotros.html" target ="_blank"> <img class= "icon" src=img/email_icon.png alt="icono"> </a>        
         
-    </footer>
+    </nav>
+    <main>
+      <div class="container cont_vol">
+        <p class="titulo_form">LLENA EL FORMULARIO</p> 
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <!--Nombre y apellido-->
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom01 txt_form">Nombres</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Ej: Pedro Alfonso" required>
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Apellidos</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Ej: Castro López" required>
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>
+                <!--Rut-->
+                <div class="col-md-2 mb-3">
+                    <label for="validationCustom03">Rut</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Ej: 00000000-K" required>
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>
+                <!--Fecha de Nacimiento-->
+                <div class="col-md-2 mb-3">
+                    <label for="validationCustom04">Fecha de Nacimiento</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="Ej: 29/04/1969" required>
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>
+                <!--Género-->
+                <div>
+                    <section class="genero">
+                    <label> Género</label>
+                    </section>  
+                  <div class="chk_genero">
+                      <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label " for="inlineCheckbox1">Femenino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+                      <label class="form-check-label" for="inlineCheckbox3">Otro </label>
+                    </div>
+                  </div>
+                </div>
+                <!--Edad-->
+                <div class="col-md-1 mb-4 edad">
+                  <label for="validationCustom05">Edad</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Ej: 45" required>
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>     
+                <!--Nacionalidad-->
+                <div class="col-md-3 mb-3 nacionalidad">
+                  <label for="validationCustom06">Nacionalidad</label>
+                  <input type="text" class="form-control" id="validationCustom06" placeholder="Ej: Chilena" required>
+                  <div class="valid-feedback">
+                      Correcto
+                  </div>
+                </div>          
+            </div>
+            <!--Correo Electrónico-->
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationCustom07">Correo Electrónico</label>
+                  <input type="text" class="form-control" id="validationCustom07" placeholder="Ej: email@gmail.com" required>
+                  <div class="valid-feedback">
+                      Correcto
+                  </div>
+                </div>
+                <!--Celular-->
+                <div class="col-md-3 mb-3">
+                  <label for="validationCustom08">Número celular</label>
+                  <input type="text" class="form-control" id="validationCustom08" placeholder="Ej: +569 12345678" required>
+                  <div class="valid-feedback">
+                      Correcto
+                  </div>
+                </div>        
+            </div>
+            <div class="form-row">   
+                <!--Dirección-->
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom09">Dirección</label>
+                    <input type="text" class="form-control" id="validationCustom09" placeholder="Ej: Av. Siempre Viva #123" required>
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>                    
+                </div>
+                <!--Comuna-->
+                <div class="col-md-3 mb-3">
+                  <label for="validationCustom10">Comuna</label>
+                  <input type="text" class="form-control" id="validationCustom10" placeholder="Ej: Puente Alto" required>
+                  <div class="valid-feedback">
+                      Correcto
+                  </div>
+                </div>      
+                <!--Ciudad-->
+                <div class="col-md-3 mb-3">
+                  <label for="validationCustom11">Ciudad</label>
+                  <input type="text" class="form-control" id="validationCustom11" placeholder="Ej: Concepción" required>
+                  <div class="valid-feedback">
+                      Correcto
+                  </div>
+                </div>       
+            </div>
+            
+            <div>
+              <div class="form-row">
+                <div class="col-md-1 mb-3 ">
+                  <label for="validationCustom12">Peso (Kg)</label>
+                    <input type="text" class="form-control" id="validationCustom12" placeholder="Ej: 78" required>
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>    
+                  <div class="col-md-1 mb-3 ">
+                    <label for="validationCustom13">Talla (Cm)</label>
+                      <input type="text" class="form-control" id="validationCustom13" placeholder="Ej: 180" required>
+                      <div class="valid-feedback">
+                          Correcto
+                      </div>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputState">¿Enfermedad Crónica?</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Seleccione</option>
+                      <option>SI</option>
+                      <option>NO</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputState">¿Toma algún medicamento ?</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Seleccione</option>
+                      <option>SI</option>
+                      <option>NO</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="validationCustom14">¿Cuál?</label>
+                    <input type="text" class="form-control" id="validationCustom14" placeholder="Ej: Paracetamol" required>
+                  </div>         
+                </div>  
+            </div>
+            <section>
+              <label class="segun"> Según su alimentación normal:</label>
+              </section> 
+            <div class="form-row">
+              <div class="col-md-3">
+                <label for="validationCustom15">¿Cuantas veces a la semana consume pescado?</label>
+                <input type="text" class="form-control" id="validationCustom15" placeholder="Ej: 1" required>
+              </div>
+              
+              <div class="col-md-3">
+                <label for="validationCustom16">¿Cuantas veces a la semana consume legumbres?</label>
+                <input type="text" class="form-control" id="validationCustom16" placeholder="Ej: 0" required>
+              </div>
+              
+              <div class="col-md-2 ">
+                <label for="validationCustom17">¿Cuantas vasos de agua consume al día?</label>
+                <input type="text" class="form-control" id="validationCustom17" placeholder="Ej: 5" required>
+              </div>
 
+              <div class="col-md-2">
+                <label for="validationCustom18">¿Cuantas veces al día consume verduras?</label>
+                <input type="text" class="form-control" id="validationCustom18" placeholder="Ej: 2" required>
+              </div>
+
+              <div class="col-md-2">
+                <label for="validationCustom19">¿Cuantas veces al día consume frutas?</label>
+                <input type="text" class="form-control" id="validationCustom19" placeholder="Ej: 3" required>
+              </div>
+            </div>
+            
+              <div>
+                <div class="form-row">
+                  <div class="col-md-3">
+                    <label for="validationCustom15">¿Cuantas veces al mes consume alimentos no saludables? Ej: Chatarra, dulces, tortas, pasteles, etc.</label>
+                    <input type="text" class="form-control" id="validationCustom15" placeholder="Ej: 1" required>
+                  </div>
+                </div>            
+              </div>
+            
+              
+            <!--Acepto términos-->
+              <div class="form-group chk_enviar">
+                <div class="form-check ">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label " for="invalidCheck">
+                    Estoy de acuerdo con entregar mi información.
+                  </label>
+                  <div class="invalid-feedback borde_ups">
+                    UPS! Debes estar de acuerdo con entregar tu información para enviar el formulario.
+                  </div>
+                </div>
+              </div>
+            <button class="btn btn-success" type="submit">Enviar Formulario</button>
+        </form>
+          <!--Validador Ingreso-->
+            <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+    </div>   
+    </main>
 
 </body>
 </html>

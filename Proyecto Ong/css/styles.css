@@ -4,6 +4,8 @@
     --secundario: #B6ECC6;
     --colortext:#848B83;
     --alternativo: #f4efc1;
+    --alternativo2:#2c6341;
+    --alternativo3:#e6f7e68a;
     --fuentePrincipal: 'New Tegomin', serif;
 }
 
@@ -14,7 +16,7 @@ html {
 img {
     max-width: 100%;
 }
-p {
+.p {
    font-size: 17.8px;
    font-family: Arial, Helvetica, sans-serif; 
    color: var(--colortext)
@@ -23,7 +25,7 @@ a {
     text-decoration: none;
 }
 body {
-    background-color: var(--secundario);
+    background: linear-gradient(to bottom,var(--primario), var(--alternativo2));
 
 }
 
@@ -118,25 +120,30 @@ legend {
     float:right;
     max-width: 500px;
 }
+/*Formulario */
+.tit_form{
+    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: var(--alternativo2);
+   
+}
 
-/*Formulario Nutricion*/
-.titulo_salud{
-    
+/*Nutricion*/
+.titulo_nut{
     color: #020202;
     font-size: 30px;
     font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
     
+    
+}
+/*Deporte*/
+.titulo_dep{
+    color:#020202;
+    font-size: 60px;
+    font-weight: bolder;
 }
 
-
-.titulo_form{
-    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    color: #2c6341;
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
 
 
 .msj_ups{
@@ -159,10 +166,10 @@ legend {
 .edad{
     margin-left: 20px;
 }
-/*
+
 .nacionalidad{
-    margin-left: 60px;
-}*/
+    margin-left: 50px;
+}
 
 .segun{
     color: #020202;
@@ -174,7 +181,7 @@ legend {
 }
 
 .txt_form{
-    color:#2c6341;
+    color:var(--alternativo2);
 }
 .margen_15{
     margin-bottom: 40%;
@@ -183,6 +190,7 @@ legend {
 .cont_nut{
     margin-bottom: 10%;
     position: relative;
+    background-color: var(--alternativo3);
 
 }
 
@@ -192,20 +200,145 @@ legend {
     min-height: 10vh;
 }
 
-/** Footer **/ 
-.footer {
-    background-color: var(--primario);
-    padding: 10px;
-    margin-top: 20px;  
-}
-.footer__texto {
-    font-family: var(--fuentePrincipal);
-    text-align: center;
-    font-size: 20px;
+.btn_enviar{
+    margin-bottom: 50%;
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
+/*Deportes*/
+.txt_deportes{
+    color:var(--alternativo2);
+    font-size: 30px;
+}
+
+.txt_cuad_dep{
+   display: flexbox;
+   font-size: 35px;
+   align-items: center;
+   background-color:var(--alternativo);
     
- }
+}
+.cuad_dep{
+    margin-bottom: 20px;
+    align-items: unset;
+}
+
+.alineamiento{
+    align-items:flex-start;
+}
+
+.pos_container_dep{
+    float: left;
+    text-align: justify;
+    
+}
+.font_text_dep{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    text-align: justify;
+}
+/*Index*/
+
+.tit_index{
+    margin-bottom: 8%;
+}
+.cuad_psico{
+    width: 50%;
+    margin: auto;
+    display:relative;
+    text-align: center;
+    margin-bottom: 10%;
+    background-color: var(--alternativo3);
+    padding: 8%;
+    
+}
+
+.tit_psico{
+   font-variant: small-caps;
+    margin-bottom: 5%;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.txt_psico{
+    font-style: oblique;
+    font-size: 20px;
+    text-align: justify;
+
+}
+.img_psico
+{
+    width: 700px;
+    height: 400px;
+    margin-bottom: 15%;
+    margin-top: 10%;
+}
+
+
+/*Salud y calidad*/
+
+.cuad_salud{
+    align-items: center;
+    margin-left: 15%;
+    margin-top:5%;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin:0 auto;
+}
+
+.tit_salud{
+    align-items: center;
+    font-size: 130%;
+    font-style: oblique;
+    font-weight:bold;
+    color: var(--alternativo);
+}
+
+/*Voluntarios*/
+.cont_vol{
+    margin-bottom: 10%;
+    position: relative;
+    background-color: var(--alternativo3);
+
+}
+
+
+/*Consulta(Te ayudamos)*/
+
+.cont_cons{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    position: relative;
+    background-color: var(--alternativo3);
+    
+}
+
+.sec_res{
+    display: relative;
+    margin-left: 20%;
+}
+
+.txt_res{
+    font-size: 25px;
+}
+
+/** Footer **/ 
+.red-soc{
+    
+    display: block;
+    text-align: center;
+    margin-top: 300px;
+    padding: 20px;
+    
+}
+
+.footer{
+    margin-bottom:-20px;
+    text-align: center;
+    color: var(--alternativo2);
+    padding: 20px;
+    background-color: var(--secundario);
+}
+
